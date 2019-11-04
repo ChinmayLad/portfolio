@@ -1,0 +1,351 @@
+%html
+  %head
+
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Chinmaya Lad
+    %meta{:charset => "utf-8"}
+    %meta{name: "author" ,content: "Chinmaya Lad"}
+
+    %meta{:content => "width=device-width, initial-scale=1, user-scalable=no", :name => "viewport"}/
+    / %link{:href => "assets/css/main.css", :rel => "stylesheet"}/
+  %body.is-preload
+    / Header
+    #header
+      .top
+        / Logo
+        #logo
+          %span.image.avatar48
+            =image_tag("avatar_xs.jpg")
+            / %img{:alt => "", :src => "../../assets/images/avatar_s.jpeg"}/
+          %h1#title Chinmaya Lad
+          %p Graduate Student
+        / Nav
+        %nav#nav
+          %ul
+            %li
+              %a#top-link{:href => "#top"}
+                %span.icon.fa-home Intro
+            %li
+              %a#project-link{:href => "#project"}
+                %span.icon.fa-tasks Project
+            %li
+              %a#education-link{:href => "#education"}
+                %span.icon.fa-graduation-cap Education
+            %li
+              %a#experience-link{:href => "#experience"}
+                %span.icon.fa-building Experience
+            %li
+              %a#skill-link{:href => "#skill"}
+                %span.icon.fa-microchip Skills
+            %li
+              %a#contact-link{:href => "#contact"}
+                %span.icon.fa-envelope Contact
+      .bottom
+        / Social Icons
+        %ul.icons
+          %li
+            %a.icon.fa-twitter{:href => "https://twitter.com/ChinmayLad93", :target => "_blank"}
+              %span.label Twitter
+          %li
+            %a.icon.fa-facebook{:href => "https://www.facebook.com/chinmay.lad", :target => "_blank"}
+              %span.label Facebook
+          %li
+            %a.icon.fa-github{:href => "https://github.com/ChinmayLad", :target => "_blank"}
+              %span.label Github
+          %li
+            %a.icon.fa-envelope{:href => "mailto:ladchinmay@gmail.com", :target => "_blank"}
+              %span.label Email
+    / Main
+    #main
+      / Intro
+      %section#top.dark.cover.one
+        .container
+          %header
+            %h2.alt
+              %strong 
+              %span.icon.fa-quote-left
+              Study without desire spoils the memory, and it retains nothing that it takes in
+              %span.icon.fa-quote-right
+              %br
+              %br
+              ="-Leonardo Da Vinci"
+            %p
+              %br/
+          /
+            <footer>
+            <a href="#portfolio" class="button scrolly">About Me</a>
+            </footer>
+      / Portfolio
+      %section#portfolio.two
+        .container
+          %header
+            %h2 About Me
+          %p
+            Graduate Student at University of Buffalo, New York.
+            I'm actively looking for Full-time oppurtunies in the field of Computer Science.
+            I'm an experienced Software Developer with experience in E-commerce Industry with strong technology skills in Android Application Development, Ruby on Rails, Java, R, Python.
+      %section#project.three
+        .container
+          %header
+            %h2 Projects
+          %ul.align-left
+            %li
+              %h4 Manga Colorization using cGAN
+              / %a.icon.fa-github{:href => "https://github.com/Tabish06/Customer_KPI", :target => "_blank"}
+              / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+              Developed an application for coloring black & white Manga images using Conditional Generative Adversarial Networks. Implemented U-Net architecture along with skip-connections for the generating the colored images and Patch-GAN rchitecture as discriminator between the colored image and the real image.
+              %br/
+            %li
+              %h4 Explanable AI
+              / %a.icon.fa-images{href:"https://drive.google.com/file/d/1N0bze0Mtu4Wi_nPgtzS4R6RqUuMM54J5/view?usp=sharing",target: "_blank"}
+              Developed an architecture that learns explainable features from writers’ handwriting domain while learning to answer various queries for that domain. The architecture consists of combination of deep learning model along with probabilistic graphical model. The deep learning model is an Auto-Encoder which provides latent representations of the handwriting samples.
+            %li
+              %h4 Classification Of Handwritten Digits
+              / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+              Implemented Logistic Regression, Neural Network, Random Forest and SVM methods and combined them using boosting technique on MNIST dataset for training and testing. Tested the model on USPS dataset to validate “No Free Lunch Theorem”.
+              %br/
+            %li
+              %h4 Amazon Dynamo Style Storage
+              / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+              Designed a distributed key-value storage system using Android emulators as distributed servers. Implemented partitioning, Replication and Failure handling to provide Linearizability and Availability at same time.
+              %br/
+            %li
+              %h4 
+                Key Thresholding
+                %a.icon.fa-github{:href => "https://github.com/ChinmayLad", :target => "_blank"}
+              Implemented Shamir’s Secret Sharing Algorithm for key thresholding using Lagrange’s Interpolation and Elgamal Encryption as encryption base.
+      %section#education.four
+        .container
+          %header
+            %h2 Education
+          %ul.align-left
+            %li
+              %h4 University at Buffalo, New York
+              Master of Science in Computer Science , 2018-2020 
+              %br/
+              %span.label-course Machine Learning
+              %span.label-course Deep Learning
+              %span.label-course Computer Vision
+              %span.label-course Analysis of Algorithms
+              %span.label-course Distributed System
+              %span.label-course Analysis of Algorithms
+            %li
+              %h4 University of Mumbai
+              B.E in Computer Engineering, 2012-2016
+              %br
+              %span.label-course Data Mining
+              %span.label-course Artificial Intelligence
+              %span.label-course Data Mining
+              %span.label-course Big Data Analytics
+      %section#experience.five
+        .container
+          %header
+            %h2
+              Experience
+          %ul.align-left
+            %li
+              %h4
+                Software Developer​ , ​ Mirraw Online Services - an Ecommerce Start-up, Mumbai, India
+                , Aug 2016 – March 2018
+              Technologies Used: Android App Development, Ruby on Rails, JavaScript, PostgreSQL, AJAX, Python, AWS.
+              %br
+              %ul.align-left
+                %li Designed, implemented and released Landing Page on Mirraw iOS App with configurable UI components to enhance User Experience using Swift increasing the overall click through rate by 10%.
+                %li Managing and teaching iOS Development and Ruby on Rails Development to new developers.
+                %li Developed Order Check System which decreased the Order Defect Rate from 28% to 5%.
+                %li Optimized response time of PostgreSQL Server by monitoring and reducing the number of queries and by using caching.
+                %li Integrated multiple 3​rd​ party Restful APIs from partners such as Fedex, DHL, Shadowfax, Paypal.
+                %li Discerned and solved critical bugs on payments module which caused Order Payments to fail.
+            %li
+              %h4 Development Intern​ , ​Eyantra Robotics Lab, Mumbai, India
+              Technologies Used: PHP, HTML, Google Blockly Library, Laravel Framework.
+              %br
+              %ul.align-left
+                %li Analysed data related to endemic using R.
+                %li Developed a UI for data visualization and insights using Shiny Framework.
+                %li Connected R to .NET framework.
+              %br
+      %section#skill.six
+        .container
+          %header
+            %h2
+              Technology Skills
+          .row
+            .col-sm-4
+              .legend
+                .skills
+                  %ul
+                    %li.android Android
+                    %li.java Java
+                    %li.python Python
+                    %li.ruby Ruby
+                    %li.tensorflow TensorFlow
+                    %li.keras Keras
+                    %li.pytorch PyTorch
+                    
+            .col-10
+              #diagram
+                .get
+                  .arc
+                    %span.text TensorFlow
+                    %input.percent{ :type => 'hidden', :value => '70'}
+                    %input.color{:type => 'hidden', :value => '#2ed573'}
+                  .arc
+                    %span.text Keras
+                    %input.percent{ :type => 'hidden', :value => '65'}
+                    %input.color{:type => 'hidden', :value => '#D980FA'}
+                  .arc
+                    %span.text PyTorch
+                    %input.percent{ :type => 'hidden', :value => '80'}
+                    %input.color{:type => 'hidden', :value => '#1B1464'}
+                  .arc
+                    %span.text Ruby
+                    %input.percent{ :type => 'hidden', :value => '98'}
+                    %input.color{:type => 'hidden', :value => '#d32c2c'}
+                  .arc
+                    %span.text Python
+                    %input.percent{:type => 'hidden', :value => '95'}
+                    %input.color{ :type => 'hidden', :value => '#00a9ec'}
+                  .arc
+                    %span.text Java
+                    %input.percent{ :type => 'hidden', :value => '90'}
+                    %input.color{:type => 'hidden', :value => '#f58d00'}
+                  .arc
+                    %span.text Android
+                    %input.percent{:type => 'hidden', :value => '90'}
+                    %input.color{ :type =>'hidden', :value => '#0097aa'}
+
+          / .row
+          /   .col-12
+          /     .skillbar.clearfix{"data-percent" => "90%"}
+          /       .skillbar-title{:style => "background: #d35400;"}
+          /         %span Ruby
+          /       .skillbar-bar{:style => "background: #e67e22;"}
+          /       .skill-bar-percent 90%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "75%"}
+          /       .skillbar-title{:style => "background: #2980b9;"}
+          /         %span Python
+          /       .skillbar-bar{:style => "background: #3498db;"}
+          /       .skill-bar-percent 75%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "70%"}
+          /       .skillbar-title{:style => "background: #2980b9;"}
+          /         %span R
+          /       .skillbar-bar{:style => "background: #3498db;"}
+          /       .skill-bar-percent 70%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "90%"}
+          /       .skillbar-title{:style => "background: #2980b9;"}
+          /         %span Swift
+          /       .skillbar-bar{:style => "background: #3498db;"}
+          /       .skill-bar-percent 90%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "90%"}
+          /       .skillbar-title{:style => "background: #2980b9;"}
+          /         %span Rails
+          /       .skillbar-bar{:style => "background: #3498db;"}
+          /       .skill-bar-percent 90%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "95%"}
+          /       .skillbar-title{:style => "background: #2980b9;"}
+          /         %span iOS
+          /       .skillbar-bar{:style => "background: #3498db;"}
+          /       .skill-bar-percent 95%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "75%"}
+          /       .skillbar-title{:style => "background: #2980b9;"}
+          /         %span Java
+          /       .skillbar-bar{:style => "background: #3498db;"}
+          /       .skill-bar-percent 75%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "80%"}
+          /       .skillbar-title{:style => "background: #2c3e50;"}
+          /         %span jQuery
+          /       .skillbar-bar{:style => "background: #2c3e50;"}
+          /       .skill-bar-percent 80%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "90%"}
+          /       .skillbar-title{:style => "background: #2c3e50;"}
+          /         %span SQL
+          /       .skillbar-bar{:style => "background: #2c3e50;"}
+          /       .skill-bar-percent 90%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "65%"}
+          /       .skillbar-title{:style => "background: #2c3e50;"}
+          /         %span Tensorflow
+          /       .skillbar-bar{:style => "background: #2c3e50;"}
+          /       .skill-bar-percent 65%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "70%"}
+          /       .skillbar-title{:style => "background: #2c3e50;"}
+          /         %span Keras
+          /       .skillbar-bar{:style => "background: #2c3e50;"}
+          /       .skill-bar-percent 70%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "80%"}
+          /       .skillbar-title{:style => "background: #46465e;"}
+          /         %span HTML5
+          /       .skillbar-bar{:style => "background: #5a68a5;"}
+          /       .skill-bar-percent 80%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "95%"}
+          /       .skillbar-title{:style => "background: #333333;"}
+          /         %span CSS
+          /       .skillbar-bar{:style => "background: #525252;"}
+          /       .skill-bar-percent 95%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "90%"}
+          /       .skillbar-title{:style => "background: #27ae60;"}
+          /         %span JavaScript
+          /       .skillbar-bar{:style => "background: #2ecc71;"}
+          /       .skill-bar-percent 90%
+          /     / End Skill Bar
+          /     .skillbar.clearfix{"data-percent" => "90%"}
+          /       .skillbar-title{:style => "background: #124e8c;"}
+          /         %span CoffeeScript
+          /       .skillbar-bar{:style => "background: #4288d0;"}
+          /       .skill-bar-percent 90%
+          /     .skillbar.clearfix{"data-percent" => "100%"}
+          /       .skillbar-title{:style => "background: #124e8c;"}
+          /         %span Git
+          /       .skillbar-bar{:style => "background: #4288d0;"}
+          /       .skill-bar-percent 100%
+      %section#contact.seven
+        .container
+          %header
+            %h2 Contact
+          %p
+            %span.icon.fa-map-marker
+            Charlotte,NC
+            %br
+            %a{:href => "mailto:tmaniar@uncc.edu"} tmaniar@uncc.edu
+            %br
+            .fa.fa-link
+            %a{href: 'https://drive.google.com/file/d/1U_ZnD6THePx51bGS25uwKrq9YdxbX6Ku/view?usp=sharing',target: '_blank' } Resume
+    / Footer
+    / <div id="footer">
+    / Copyright
+    /
+      <ul class="copyright">
+      <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    / </div>
+    / Scripts
+    / %script{:src => "assets/javascripts/jquery.min.js"}
+    / %script{:src => "assets/javascripts/jquery.scrolly.min.js"}
+    / %script{:src => "assets/javascripts/jquery.scrollex.min.js"}
+    / %script{:src => "assets/javascripts/browser.min.js"}
+    / %script{:src => "assets/javascripts/breakpoints.min.js"}
+    / %script{:src => "assets/javascripts/util.js"}
+    / %script{:src => "assets/javascripts/main.js"}
+
+
+    =javascript_include_tag "jquery.min.js"
+    =javascript_include_tag "jquery.scrolly.min.js"
+    =javascript_include_tag "jquery.scrollex.min.js"
+    =javascript_include_tag "browser.min.js"
+    =javascript_include_tag "breakpoints.min.js"
+    =javascript_include_tag "util.js"
+    =javascript_include_tag "main.js"
+    =javascript_include_tag "raphael.js"

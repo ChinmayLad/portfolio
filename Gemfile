@@ -20,6 +20,9 @@ gem 'pg', '>= 0.18', '< 2.0'
 # gem 'haml-rails', '~> 0.9.0'
 # gem 'font-awesome-rails'
 
+gem 'haml'
+gem 'font-awesome-rails'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -59,7 +62,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'webdrivers', '~> 3.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
