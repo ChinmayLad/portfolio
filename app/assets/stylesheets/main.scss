@@ -713,7 +713,7 @@
 		}
 	}
 
-	
+
 	#portfolio {
 		p {
 			text-align: justify;
@@ -1202,4 +1202,12 @@
 
 	.get {
 		display: none;
+	}
+
+	.align-left {
+		li {
+			h4 {
+				font-weight: bold
+			}
+		}
 	}
