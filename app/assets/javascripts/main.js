@@ -139,13 +139,14 @@ var o = {
 		return Math.floor((Math.random()*(u-l+1))+l);
 	},
 	diagram: function(){
-		var size = 700;
-		var r = Raphael('diagram', 700, 700),
+		var size = $('#skill').width();
+		size = (size>700 ? 700 : size);
+		var r = Raphael('diagram', size, size),
 			rad = 73,
 			defaultText = 'Skills',
 			speed = 250;
 		
-		r.circle(size/2, size/2, 85).attr({ stroke: 'none', fill: '#193340' });
+		r.circle(size/2, size/2, size/9).attr({ stroke: 'none', fill: '#193340' });
 		
 		var title = r.text(size/2, size/2, defaultText).attr({
 			font: '22px Ubuntu',
@@ -172,18 +173,18 @@ var o = {
 				value = t.find('.percent').val(),
 				text = t.find('.text').text();
 			
-			rad += 30;	
-			var z = r.path().attr({ arc: [value, color, rad], 'stroke-width': 25 });
+			rad += size/25;	
+			var z = r.path().attr({ arc: [value, color, rad], 'stroke-width': (size/30) });
 			
 			z.mouseover(function(){
-                this.animate({ 'stroke-width': 40, opacity: .75 }, 1000, 'elastic');
+                this.animate({ 'stroke-width': size/18, opacity: .75 }, 1000, 'elastic');
                 if(Raphael.type != 'VML') //solves IE problem
 				this.toFront();
 				title.stop().animate({ opacity: 0 }, speed, '>', function(){
 					this.attr({ text: text + '\n' + value + '%' }).animate({ opacity: 1 }, speed, '<');
 				});
             }).mouseout(function(){
-				this.stop().animate({ 'stroke-width': 25, opacity: 1 }, speed*4, 'elastic');
+				this.stop().animate({ 'stroke-width': size/30, opacity: 1 }, speed*4, 'elastic');
 				title.stop().animate({ opacity: 0 }, speed, '>', function(){
 					title.attr({ text: defaultText }).animate({ opacity: 1 }, speed, '<');
 				});	
