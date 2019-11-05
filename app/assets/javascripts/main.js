@@ -147,9 +147,9 @@ var o = {
 			speed = 250;
 		
 		r.circle(size/2, size/2, size/9).attr({ stroke: 'none', fill: '#193340' });
-		
+		var f = size > 400 ?'22px Ubuntu':'15px Ubuntu'
 		var title = r.text(size/2, size/2, defaultText).attr({
-			font: '22px Ubuntu',
+			font: f,
 			fill: '#fff'
 		}).toFront();
 		
@@ -176,6 +176,7 @@ var o = {
 			rad += size/25;	
 			var z = r.path().attr({ arc: [value, color, rad], 'stroke-width': (size/30) });
 			
+
 			z.mouseover(function(){
                 this.animate({ 'stroke-width': size/18, opacity: .75 }, 1000, 'elastic');
                 if(Raphael.type != 'VML') //solves IE problem
@@ -185,6 +186,22 @@ var o = {
 				});
             }).mouseout(function(){
 				this.stop().animate({ 'stroke-width': size/30, opacity: 1 }, speed*4, 'elastic');
+				title.stop().animate({ opacity: 0 }, speed, '>', function(){
+					title.attr({ text: defaultText }).animate({ opacity: 1 }, speed, '<');
+				});	
+            });
+
+            var tab = $('.skills').find('.'+text.toLowerCase());
+            // alert(Object.keys(tab))
+            tab.mouseover(function(){
+                z.animate({ 'stroke-width': size/18, opacity: .75 }, 1000, 'elastic');
+                if(Raphael.type != 'VML') //solves IE problem
+				z.toFront();
+				title.stop().animate({ opacity: 0 }, speed, '>', function(){
+					this.attr({ text: text + '\n' + value + '%' }).animate({ opacity: 1 }, speed, '<');
+				});
+            }).mouseout(function(){
+				z.stop().animate({ 'stroke-width': size/30, opacity: 1 }, speed*4, 'elastic');
 				title.stop().animate({ opacity: 0 }, speed, '>', function(){
 					title.attr({ text: defaultText }).animate({ opacity: 1 }, speed, '<');
 				});	
