@@ -147,7 +147,7 @@ var o = {
 			speed = 250;
 		
 		r.circle(size/2, size/2, size/9).attr({ stroke: 'none', fill: '#193340' });
-		var f = size > 400 ?'22px Ubuntu':'15px Ubuntu'
+		var f = size > 420 ?'22px Ubuntu':'14px Ubuntu'
 		var title = r.text(size/2, size/2, defaultText).attr({
 			font: f,
 			fill: '#fff'
