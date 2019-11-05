@@ -141,7 +141,7 @@ var o = {
 	diagram: function(){
 		var size = $('#skill').width();
 		size = (size>700 ? 700 : size);
-		var r = Raphael('diagram', size, size),
+		var r = Raphael('diagram', 6.5*size/7, 6.5*size/7),
 			rad = size/9.5,
 			defaultText = 'Skills',
 			speed = 250;

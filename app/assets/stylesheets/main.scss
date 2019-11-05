@@ -781,6 +781,66 @@
 		}
 	}
 
+
+	.skills {
+		float: left;
+		clear: both;
+		width: 100%;
+		ul {
+			display: block;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+  		}
+		li {
+			display: block;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			float: right;
+			clear: both;
+			padding: 0 15px;
+			height: 35px;
+			line-height: 35px;
+			color: #fff;
+			margin-bottom: 1px;
+			font-size: 18px;
+		}
+		.android {
+			background: #0097aa;
+		}
+		.java {
+			background: #d32c2c;
+		}
+		.python {
+			background: #00a9ec;
+		}
+		.ruby {
+			background: #f58d00;
+		}
+		.tensorflow{
+			background: #2ed573;
+		}
+		.keras{
+			background: #D980FA;
+		}
+		.pytorch{
+			background: #1B1464;
+		}
+	}
+
+	.get {
+		display: none;
+	}
+
+	.align-left {
+		li {
+			h4 {
+				font-weight: bold
+			}
+		}
+	}
+
 /* Wide */
 
 	@include breakpoint('wide') {
@@ -906,6 +966,21 @@
 
 			#main {
 				margin-left: 20%;
+			}
+
+			.skills {
+				float: left;
+				ul {
+					display: inline;
+					list-style: none;
+				}
+				li {
+					display: inline;
+					list-style: none;
+					float: none;
+					padding: 10px 15px;
+					line-height: 45px;
+				}
 			}
 
 	}
@@ -1084,6 +1159,21 @@
 					}
 				}
 			}
+
+			.skills {
+				float: left;
+				ul {
+					display: inline;
+					list-style: none;
+				}
+				li {
+					display: inline;
+					list-style: none;
+					float: none;
+					padding: 10px 15px;
+					line-height: 45px;
+				}
+			}
 	}
 
 /* Mobile */
@@ -1151,63 +1241,19 @@
 				}
 			}
 
-	}
-
-	.skills {
-		float: left;
-		clear: both;
-		width: 100%;
-		ul {
-			display: block;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-  		}
-		li {
-			display: block;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			float: right;
-			clear: both;
-			padding: 0 15px;
-			height: 35px;
-			line-height: 35px;
-			color: #fff;
-			margin-bottom: 1px;
-			font-size: 18px;
-		}
-		.android {
-			background: #0097aa;
-		}
-		.java {
-			background: #d32c2c;
-		}
-		.python {
-			background: #00a9ec;
-		}
-		.ruby {
-			background: #f58d00;
-		}
-		.tensorflow{
-			background: #2ed573;
-		}
-		.keras{
-			background: #D980FA;
-		}
-		.pytorch{
-			background: #1B1464;
-		}
-	}
-
-	.get {
-		display: none;
-	}
-
-	.align-left {
-		li {
-			h4 {
-				font-weight: bold
+			.skills {
+				float: center;
+				ul {
+					display: inline;
+					list-style: none;
+				}
+				li {
+					display: inline;
+					list-style: none;
+					float: none;
+					padding: 10px 15px;
+					line-height: 45px;
+				}
 			}
-		}
+
 	}
