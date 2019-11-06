@@ -1,12 +1,12 @@
 %html
   %head
-
+    =render 'home/google_analytics'
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Chinmaya Lad
     %meta{:charset => "utf-8"}
     %meta{name: "author" ,content: "Chinmaya Lad"}
-
     %meta{:content => "width=device-width, initial-scale=1, user-scalable=no", :name => "viewport"}/
+
     / %link{:href => "assets/css/main.css", :rel => "stylesheet"}/
   %body.is-preload
     / Header
@@ -43,6 +43,9 @@
       .bottom
         / Social Icons
         %ul.icons
+          %li
+            %a.icon.fa-linkedin{:href => "https://linkedin.com/in/chinmaylad", :target => "_blank"}
+              %span.label LinkedIn
           %li
             %a.icon.fa-twitter{:href => "https://twitter.com/ChinmayLad93", :target => "_blank"}
               %span.label Twitter

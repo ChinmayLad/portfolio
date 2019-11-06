@@ -108,8 +108,7 @@
 				.appendTo($body);
 
 		// Header.
-		$('#header')
-		.panel({
+		$('#header').panel({
 			delay: 500,
 			hideOnClick: true,
 			hideOnSwipe: true,
