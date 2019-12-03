@@ -111,6 +111,19 @@
             %h2 Projects
           %ul.align-left
             %li
+              %h4
+                Neural Style Transfer
+                %a.icon.fa-github{:href => "https://github.com/ChinmayLad/neural-style-transfer", :target => "_blank"}
+              / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+              Implemented a Neural Style Transfer model for performing artistic style transfer from an impressionist painting to normal image in PyTorch. Trained the model on #{content_tag(:strong, "Perceptual Loss")} calculated using #{content_tag(:strong, "VGG-16")} network trained for classification. Developed #{content_tag(:strong, "Conditional Instance Normalization")} for transferring multiple styles using single network.
+              %br/
+            %li
+              %h4
+                Image Generation using Self Attention
+                %a.icon.fa-github{:href => "https://github.com/ChinmayLad/self_attention_gan", :target => "_blank"}
+              Developed a Generative Adversarial Network with a Self Attention mechanism for generating artificial images in PyTorch. Compared the results with DCGAN using #{content_tag(:strong, "Frechet Inception Distance")} as evaluation metric.
+              %br/
+            %li
               %h4 Manga Colorization using cGAN
               / %a.icon.fa-github{:href => "https://github.com/Tabish06/Customer_KPI", :target => "_blank"}
               / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
