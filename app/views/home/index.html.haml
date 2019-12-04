@@ -109,54 +109,65 @@
         .container
           %header
             %h2 Projects
-          %ul.align-left
+          %ul.no-bullets.align-left
             %li
               %h4
                 Neural Style Transfer
                 %a.iconb.fa-github{:href => "https://github.com/ChinmayLad/neural-style-transfer", :target => "_blank"}
                 %a.iconb.fa-medium{:href => "https://medium.com/@chinmayalad/understanding-neural-style-transfer-3061cd92648", :target => "_blank"}
               / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-              Implemented a Neural Style Transfer model for performing artistic style transfer from an impressionist painting to normal image in PyTorch. Trained the model on #{content_tag(:strong, "Perceptual Loss")} calculated using #{content_tag(:strong, "VGG-16")} network trained for classification. Developed #{content_tag(:strong, "Conditional Instance Normalization")} for transferring multiple styles using single network.
-              %br/
+              %ul.align-left
+                %li Implemented a Neural Style Transfer model for performing artistic style transfer from an impressionist painting to normal image in PyTorch. 
+                %li Trained the model on #{content_tag(:strong, "Perceptual Loss")} calculated using #{content_tag(:strong, "VGG-16")} network trained for classification. 
+                %li Developed #{content_tag(:strong, "Conditional Instance Normalization")} for transferring multiple styles using single network.
+                %li Used the same model for real-time artistic style transfer on a video input.
             %li
               %h4
                 Image Generation using Self Attention
                 %a.iconb.fa-github{:href => "https://github.com/ChinmayLad/self_attention_gan", :target => "_blank"}
-              Developed a Generative Adversarial Network with a Self Attention mechanism for generating artificial images in PyTorch. Compared the results with DCGAN using #{content_tag(:strong, "Frechet Inception Distance")} as evaluation metric.
-              %br/
+              %ul.align-left
+                %li Developed a Generative Adversarial Network with a Self Attention mechanism for generating artificial images in PyTorch. 
+                %li Compared the results with DCGAN using #{content_tag(:strong, "Frechet Inception Distance")} as evaluation metric.
             %li
               %h4 Manga Colorization using cGAN
               / %a.iconb.fa-github{:href => "https://github.com/Tabish06/Customer_KPI", :target => "_blank"}
               / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-              Developed an application for coloring black & white Manga images using Conditional Generative Adversarial Networks. Implemented U-Net architecture along with skip-connections for the generating the colored images and Patch-GAN architecture as discriminator between the colored image and the real image.
-              %br/
+              %ul.align-left
+                %li Developed an application for coloring black & white Manga images using Conditional Generative Adversarial Networks.
+                %li Implemented #{content_tag(:strong, "U-Net")} architecture along with skip-connections for the generating the colored images and #{content_tag(:strong, "Patch-GAN")} architecture as discriminator between the colored image and the real image.
             %li
               %h4 Explanable AI
               / %a.icon.fa-images{href:"https://drive.google.com/file/d/1N0bze0Mtu4Wi_nPgtzS4R6RqUuMM54J5/view?usp=sharing",target: "_blank"}
-              Developed an architecture that learns explainable features from writers’ handwriting domain while learning to answer various queries for that domain. The architecture consists of combination of deep learning model along with probabilistic graphical model. The deep learning model is an Auto-Encoder which provides latent representations of the handwriting samples.
+              %ul.align-left
+                %li Developed an architecture that learns explainable features from writers’ handwriting domain while learning to answer various queries for that domain. 
+                %li The architecture consists of combination of deep learning model along with probabilistic graphical model. 
+                %li The deep learning model is an Auto-Encoder which provides latent representations of the handwriting samples.
             %li
               %h4 Classification Of Handwritten Digits
               / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-              Implemented Logistic Regression, Neural Network, Random Forest and SVM methods and combined them using boosting technique on MNIST dataset for training and testing. Tested the model on USPS dataset to validate “No Free Lunch Theorem”.
-              %br/
+              %ul.align-left
+                %li Implemented Logistic Regression, Neural Network, Random Forest and SVM methods and combined them using boosting technique on MNIST dataset for training and testing. 
+                %li Tested the model on USPS dataset to validate “No Free Lunch Theorem”.
             %li
               %h4
                 Amazon Dynamo Style Storage
                 %a.iconb.fa-github{:href => "https://github.com/ChinmayLad/SimpleDynamo", :target => "_blank"}
               / <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-              Designed a distributed key-value storage system using Android emulators as distributed servers. Implemented partitioning, Replication and Failure handling to provide Linearizability and Availability at same time.
-              %br/
+              %ul.align-left
+                %li Designed a distributed key-value storage system using Android emulators as distributed servers.
+                %li Implemented partitioning, Replication and Failure handling to provide Linearizability and Availability at same time.
             %li
               %h4
                 Key Thresholding
                 %a.iconb.fa-github{:href => "https://github.com/ChinmayLad/shamirs-secret-sharing", :target => "_blank"}
-              Implemented Shamir’s Secret Sharing Algorithm for key thresholding using Lagrange’s Interpolation and Elgamal Encryption as encryption base.
+              %ul.align-left
+                %li Implemented #{content_tag(:strong, "Shamir’s Secret Sharing Algorithm")} for key thresholding using #{content_tag(:strong, "Lagrange’s Interpolation")} and #{content_tag(:strong, "Elgamal Encryption")} as encryption base.
       %section#experience.five
         .container
           %header
             %h2
               Experience
-          %ul.align-left
+          %ul.no-bullets.align-left
             %li
               %h4
                 Software Developer​,​ Mirraw Online Services, Mumbai, India, Aug 2016 – March 2018

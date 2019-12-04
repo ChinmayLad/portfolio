@@ -580,6 +580,7 @@
 			-moz-osx-font-smoothing: grayscale;
 			padding: 0;
 			vertical-align: center;
+			margin-right: 0.2em;
 		}
 
 		> .label {
@@ -601,6 +602,7 @@
 			-moz-osx-font-smoothing: grayscale;
 			padding: 0;
 			vertical-align: center;
+			margin-right: 0.2em;
 		}
 
 		> .label {
@@ -767,6 +769,24 @@
 		}
 	}
 
+	.label-course {
+	    background: #80828D;
+	    font-size: 14px;
+	    color: #fff !important;
+	    padding: .4em .8em .5em;
+	    font-size: 85%;
+	    font-weight: bold;
+	    line-height: 3;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: baseline;
+	    border-radius: .25em;
+
+	}
+
+	.no-bullets {
+		list-style-type:none;
+	}
 /* Main */
 
 	#main {
