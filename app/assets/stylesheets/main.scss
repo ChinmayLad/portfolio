@@ -193,7 +193,7 @@
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
 		&:hover {
-			color: #E27689;
+			color: #ff9050;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -722,7 +722,7 @@
 						color: #fff;
 
 						span:before {
-							color: #ff7f50;
+							color: #ff9050;
 						}
 					}
 				}
