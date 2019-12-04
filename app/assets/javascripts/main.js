@@ -138,8 +138,8 @@ var o = {
 		return Math.floor((Math.random()*(u-l+1))+l);
 	},
 	diagram: function(){
-		var size = $('#skill').width();
-		size = (size>700 ? 700 : size);
+		var sizes = $('.col-10').width();
+		size = (sizes>700 ? 700 : sizes);
 		var r = Raphael('diagram', 6.5*size/7, 6.5*size/7),
 			rad = size/9.5,
 			defaultText = 'Skills',

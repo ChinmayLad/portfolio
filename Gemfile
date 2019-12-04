@@ -21,7 +21,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # gem 'font-awesome-rails'
 
 gem 'haml'
-gem 'font-awesome-rails'
+# gem 'font-awesome-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
