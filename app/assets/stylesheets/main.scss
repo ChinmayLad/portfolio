@@ -800,6 +800,10 @@
 			/*text-align: center;*/
 			background-image: url('images/overlay.png');
 
+			&.cov {
+				background-image: asset-url('motiv.jpg');
+			}
+
 			&.dark {
 				color: #ddd;
 				color: rgba(255, 255, 255, 0.75);
@@ -824,7 +828,7 @@
 			}
 
 			&.cover {
-				padding: 10em 0;
+				padding: 13em 0;
 				background-size: cover;
 				background-position: center center;
 			}
@@ -890,13 +894,13 @@
 			background: #0097aa;
 		}
 		.java {
-			background: #d32c2c;
+			background: #f58d00;
 		}
 		.python {
 			background: #00a9ec;
 		}
 		.ruby {
-			background: #f58d00;
+			background: #d32c2c;
 		}
 		.tensorflow{
 			background: #2ed573;

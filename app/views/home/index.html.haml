@@ -59,18 +59,18 @@
     / Main
     #main
       / Intro
-      %section#top.dark.cover.one
+      %section#top.dark.cover.cov
         .container
           %header
             %h2.alt
-              %strong 
-              %span.icon.fa-quote-left
-                Simplicity is the ultimate sophistication.
-              %span.icon.fa-quote-right
+              / %strong 
+              / %span.icon.fa-quote-left
+              /   Simplicity is the ultimate sophistication.
+              / %span.icon.fa-quote-right
               %br
               %br
-              %p
-                ="-Leonardo Da Vinci"
+              / %p
+              /   ="-Leonardo Da Vinci"
       / Portfolio
       %section#portfolio.two
         .container
@@ -110,12 +110,6 @@
           %header
             %h2 Projects
           %ul.no-bullets.align-left
-            / %li
-            /   %h4
-            /     Semantic Segmentation of Medical Image Datasets - Independent Study
-            /   %ul.align-left
-            /     %li A research project to improve the performance of existing methods of training a model for medical image segmentation without #{content_tag(:strong, "Human-in-the-Loop")} training.
-            /     %li Developed architecture for the segmentation of medical images using DeepLabV3 trained alongside an adversarial Multiscale L1 Loss in #{content_tag(:strong, "PyTorch")}.
             %li
               %h4
                 Neural Style Transfer
@@ -127,6 +121,12 @@
                 %li Trained the model on #{content_tag(:strong, "Perceptual Loss")} calculated using the #{content_tag(:strong, "VGG-16")} network trained for classification. 
                 %li Developed #{content_tag(:strong, "Conditional Instance Normalization")} for transferring multiple styles using a single network.
                 %li Used the same model for real-time artistic style transfer on video input.
+            %li
+              %h4
+                Semantic Segmentation of Medical Image Datasets - Independent Study
+              %ul.align-left
+                %li A research project to improve the performance of existing methods of training a model for medical image segmentation without #{content_tag(:strong, "Human-in-the-Loop")} training.
+                %li Developed architecture for the segmentation of medical images using DeepLabV3 trained alongside an adversarial Multiscale L1 Loss in #{content_tag(:strong, "PyTorch")}.
             %li
               %h4
                 Image Generation using Self Attention
@@ -174,6 +174,13 @@
             %h2
               Experience
           %ul.no-bullets.align-left
+            %li 
+              %h4 Software Development Engineer, Amazon Web Service, Seattle WA, April 2020 - Current
+              Technologies User: AWS Serveless applications, Lambda, S3.
+              %br
+              %ul.align-left
+                %li Work on automating price-updates for different services and manage the data over regions.
+
             %li
               %h4 Deep Learning Research, University at Buffalo, Buffalo NY, June 2019 – Dec 2019
               Technologies Used: Python, PyTorch, scitkit-learn, openslide, OpenCV.
