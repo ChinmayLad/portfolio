@@ -254,7 +254,7 @@ img { max-width: 100%; display: block; }
   font-size: clamp(18rem, 30vw, 38rem);
   font-style: italic;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(232,160,48,0.07);
+  -webkit-text-stroke: 1px rgba(232, 162, 48, 0.250);
   pointer-events: none;
   user-select: none;
   line-height: 1;

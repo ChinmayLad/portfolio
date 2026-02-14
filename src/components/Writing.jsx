@@ -19,7 +19,7 @@ export default function Writing({ posts }) {
         ) : (
           <div className="posts-list reveal-stagger" ref={listRef}>
             {posts.map((post, i) => (
-              <a className="post-item" href={post.href} key={i}>
+              <a className="post-item" href={post.href} key={i} target ="_blank">
                 <span className="post-date">{post.date}</span>
                 <span className="post-title">{post.title}</span>
                 <span className="post-tag">{post.tag}</span>

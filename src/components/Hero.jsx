@@ -27,7 +27,7 @@ export default function Hero({ data }) {
               key={link.label}
               href={link.href}
               className={`btn ${link.primary ? 'btn-primary' : 'btn-ghost'}`}
-              target={link.href.startsWith('http') ? '_blank' : undefined}
+              target='_blank'
               rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
             >
               {link.label}

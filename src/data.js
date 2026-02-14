@@ -18,9 +18,9 @@ export const DATA = {
     displayName: ["Chinmaya", "Lad"],  // second line becomes italic + accent
     desc: "Full-stack Software Engineer with 6+ years of experience building scalable, high-performance systems serving millions of users. Proven track record in system design, performance optimization, and driving measurable business impact through data-driven solutions. Strong technical leader with experience mentoring engineers, improving team processes, and delivering complex projects end-to-end. Expertise in distributed systems, cloud infrastructure, and modern web technologies.",
     links: [
-      { label: "View Resume",  href: "#",                      primary: true  },
-      { label: "GitHub",       href: "https://github.com/ChinmayLad",    primary: false },
-      { label: "LinkedIn",     href: "https://linkedin.com/in/chinmayalad",  primary: false },
+      { label: "View Resume",  href: "/portfolio/chinmaya_lad_resume.pdf",  primary: true  },
+      { label: "GitHub",       href: "https://github.com/ChinmayLad",       primary: false },
+      { label: "LinkedIn",     href: "https://linkedin.com/in/chinmayalad", primary: false },
     ],
   },
 
@@ -52,10 +52,10 @@ export const DATA = {
       highlights: [
         "Scaled pricing artifact generation across 7 AWS partitions (commercial, govcloud, China) with zero-downtime rollout",
         "Reduced pricing artifact generation time by 64% through pipeline parallelisation",
+        "Cut e-invoicing onboarding customizations by 50% with generic SAP ARIBA and COUPA templates, eliminating per-customer manual work",
         "Designed and shipped IPv6 dual-stack architecture for all pricing services",
-        "Led cross-team API versioning initiative spanning 6 service teams",
       ],
-      tech: ["Java", "AWS Lambda", "DynamoDB", "S3", "CloudFormation", "Step Functions", "IPv6"],
+      tech: ["Java", "NodeJS", "Lambda", "DynamoDB", "S3", "CloudFormation", "Step Functions", "IPv6", "React"],
     },
     {
       role:      "Software Development Engineer I",
@@ -65,33 +65,46 @@ export const DATA = {
       desc:      "Initial SDE role on the pricing team before promotion to SDE II.",
       highlights: [
         "Built data pipeline to ingest and validate pricing metadata from 40+ service teams",
-        "Contributed to the migration of legacy pricing store to DynamoDB",
+        "Automated pricing region onboarding with custom tooling, cutting launch time 80% from 5 weeks to 1 week",
+        "Launched AWS pricing for China market — shipped 15+ pages and calculators to a new partition, establishing compliance patterns adopted by future launches",
       ],
-      tech: ["Java", "AWS", "DynamoDB", "Python"],
+      tech: ["NodeJS", "Python", "Ruby", "S3", "Lambda"],
     },
     {
       role:      "Graduate Research Assistant",
       company:   "University at Buffalo",
-      dates:     "2019 — 2021",
+      dates:     "Jun 2019 — Dec 2019",
       location:  "Buffalo, NY",
       desc:      "Semi-supervised learning research focused on low-label-count scenarios.",
       highlights: [
-        "Achieved 94.2% F1 score on semi-supervised text classification benchmark",
-        "Designed label-propagation strategy combining graph-based and embedding methods",
+        "Developed semi-supervised segmentation model using adversarial loss for medical imaging, achieving 94.2% F1 on mouse kidney dataset",,
       ],
-      tech: ["Python", "PyTorch", "scikit-learn", "BERT", "Graph Neural Networks"],
+      tech: ["Python", "PyTorch", "scikit-learn"],
     },
     {
-      role:      "Robotics Engineering Intern",
+      role:      "Software Developer",
+      company:   "Mirraw Online Services",
+      dates:     "Nov 2016 — Jun 2018",
+      location:  "Mumbai, India",
+      desc:      "Full-stack engineering on a high-traffic ethnic fashion e-commerce marketplace serving customers across India and globally.",
+      highlights: [
+        "Resolved critical memory leaks through systematic debugging, lifting application availability from 92% to 99.6%",
+        "Cut Android rendering time by 36% using GPU Profiler to eliminate overdraw and view hierarchy bottlenecks",
+        "Built API-driven modular home page with configurable widgets, reducing marketing dependency on engineering and improving code reuse by 40%",
+      ],
+      tech: ["Android", "Java", "GPU Profiler", "REST APIs", "JavaScript"],
+    },
+    {
+      role:      "Developer Intern",
       company:   "e-Yantra, IIT Bombay",
-      dates:     "2018",
+      dates:     "May 2015 - July 2015",
       location:  "Mumbai, India",
       desc:      "Developed educational programming tools for the national e-Yantra robotics competition.",
       highlights: [
-        "Built a visual programming IDE used by 1,200+ students across 30 colleges",
-        "Designed embedded firmware for AVR-based robot platforms",
+        "Built web-based programming tutor to teach coding fundamentals through visual block-based interface",
+        "Implemented server-side compiler for translating visual programs and run them on educational robots",
       ],
-      tech: ["C", "Python", "AVR", "Blockly", "ROS"],
+      tech: ["C", "PHP", "Blockly", "Laravel"],
     },
   ],
 
@@ -101,38 +114,41 @@ export const DATA = {
   ─────────────────────────────────────────────────────── */
   projects: [
     {
-      title: "Semi-Supervised Text Classifier",
-      desc:  "Low-supervision text classification combining label propagation with transformer embeddings. 94.2% F1 on AG-News with only 1% labeled data.",
-      tech:  ["PyTorch", "BERT", "Graph NNs", "Python"],
-      links: { github: "https://github.com/", demo: null, paper: null },
+      title: "Neural Style Transfer",
+      desc:  "Multi-style transfer network using Conditional Instance Normalization, trained on 80K COCO images across 6 artistic styles. Runs fast enough to stylize video in real-time.",
+      tech:  ["PyTorch", "Python", "VGG", "OpenCV", "Jupyter"],
+      links: { 
+        github: "https://github.com/ChinmayLad/neural-style-transfer",
+        blog: "https://medium.com/analytics-vidhya/understanding-neural-style-transfer-3061cd92648",
+      },
     },
     {
-      title: "Distributed Rate Limiter",
-      desc:  "Token-bucket rate limiter backed by Redis, designed for multi-region deployments. Handles ~80k req/s in benchmarks with P99 < 2ms.",
-      tech:  ["Go", "Redis", "Docker", "Prometheus"],
-      links: { github: "https://github.com/", demo: null },
+      title: "Image Generation using Self-Attention GAN",
+      desc:  "PyTorch implementation of Self-Attention GAN and DCGAN, using self-attention layers to model long-range dependencies in image generation.",
+      tech:  ["PyTorch", "Python", "GANs", "Jupyter"],
+      links: { github: "https://github.com/ChinmayLad/self_attention_gan" },
     },
     {
-      title: "Visual Robot IDE",
-      desc:  "Blockly-based visual programming environment for AVR robots, developed at e-Yantra. Used by 1,200+ students across India.",
-      tech:  ["JavaScript", "Blockly", "Python", "AVR C"],
-      links: { github: "https://github.com/" },
+      title: "Shamir's Secret Sharing",
+      desc:  "Python implementation of Shamir's Secret Sharing — splits a private key into n shares using polynomial interpolation, requiring a threshold of k shares to reconstruct it.",
+      tech:  ["Python", "Cryptography", "Number Theory"],
+      links: { github: "https://github.com/ChinmayLad/shamirs-secret-sharing" },
     },
     {
-      title: "Portfolio Site",
-      desc:  "This site. React + Vite with all content in one editable data file. Dark/light theme, scroll animations. Hosted on GitHub Pages.",
-      tech:  ["React", "Vite", "CSS", "GitHub Pages"],
-      links: { github: "https://github.com/" },
+      title: "Flappy Bird NEAT",
+      desc:  "AI agent trained to play Flappy Bird using NeuroEvolution of Augmenting Topologies (NEAT) — evolves neural network topology and weights through gameplay generations.",
+      tech:  ["Python", "NEAT", "pygame"],
+      links: { github: "https://github.com/ChinmayLad/flappy-bird" },
     },
   ],
 
   /* ── Skills ── */
   skills: [
-    { category: "Languages",          items: ["Java", "Python", "Go", "JavaScript", "C / C++", "SQL"] },
-    { category: "ML / AI",            items: ["PyTorch", "scikit-learn", "BERT / Transformers", "Graph Neural Networks", "Hugging Face"] },
-    { category: "Distributed Systems",items: ["AWS Lambda", "DynamoDB", "S3", "Step Functions", "Redis", "Kafka"] },
-    { category: "Infrastructure",     items: ["CloudFormation / CDK", "Docker", "Kubernetes", "Prometheus", "IPv6 Networking"] },
-    { category: "Practices",          items: ["System Design", "BOTE Estimation", "API Versioning", "Observability", "CI / CD"] },
+    { category: "Languages",          items: ["Java", "Python", "JavaScript", "C", "SQL"] },
+    { category: "ML / AI",            items: ["PyTorch", "TensorFlow","scikit-learn", "Transformers", "Neural Networks", "Convolutional Neural Networks", "NEAT"] },
+    { category: "Distributed Systems",items: ["AWS Lambda", "Fargate", "DynamoDB", "S3", "Step Functions", "Redis", "Kafka"] },
+    { category: "Infrastructure",     items: ["CloudFormation / CDK", "IPv6 Networking"] },
+    { category: "Practices",          items: ["System Design", "API Versioning", "Observability", "CI / CD", " Modularization"] },
   ],
 
   /* ── Writing / Posts ──
@@ -140,6 +156,12 @@ export const DATA = {
      To add a post: { date: "Jan 2025", title: "Post title", tag: "Systems", href: "/posts/slug.html" }
   ─────────────────────────────────────────────────────── */
   posts: [
+    {
+      date:  "Dec 2019",
+      title: "Understanding Neural Style Transfer",
+      tag:   "ML",
+      href:  "https://medium.com/analytics-vidhya/understanding-neural-style-transfer-3061cd92648",
+    },
     // { date: "Feb 2025", title: "How I cut our pricing pipeline latency by 64%", tag: "Systems", href: "#" },
     // { date: "Jan 2025", title: "BOTE calculations that actually drive architecture", tag: "Design",  href: "#" },
   ],
@@ -148,11 +170,11 @@ export const DATA = {
   contact: {
     heading: ["Let's", "build", "something."],  // middle word becomes italic accent
     sub:     "I'm actively looking for roles in ML engineering and distributed systems. If you're working on something interesting — or just want to talk shop — reach out.",
-    cta:     { label: "Send an Email", href: "mailto:your@email.com" },
+    cta:     { label: "Send an Email", href: "mailto:ladchinmay@gmail.com" },
     links: [
-      { label: "Email",    value: "your@email.com",            href: "mailto:your@email.com",           icon: "mail"     },
-      { label: "LinkedIn", value: "linkedin.com/in/chinmaya",   href: "https://linkedin.com/in/chinmaya", icon: "linkedin" },
-      { label: "GitHub",   value: "github.com/chinmaya",        href: "https://github.com/",              icon: "github"   },
+      { label: "Email",    value: "ladchinmay@gmail.com",                href: "mailto:ladchinmay@gmail.com",               icon: "mail"     },
+      { label: "LinkedIn", value: "linkedin.com/in/chinmayalad",   href: "https://linkedin.com/in/chinmayalad", icon: "linkedin" },
+      { label: "GitHub",   value: "github.com/ChinmayLad",         href: "https://github.com/ChinmayLad",       icon: "github"   },
     ],
   },
 
