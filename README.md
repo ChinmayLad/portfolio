@@ -17,7 +17,7 @@ Visit `http://localhost:5173`
 
 ## 📦 Deploy to GitHub Pages
 
-### Option A — Username site (`chinmaya.github.io`)
+### Option A — Username site (`chinmayalad.github.io`)
 
 1. Create a repo named `<your-username>.github.io`
 2. In `vite.config.js`, set `base: '/'`
@@ -27,7 +27,7 @@ npm install
 npm run deploy
 ```
 
-### Option B — Project site (`chinmaya.github.io/portfolio`)
+### Option B — Project site (`chinmaylad.github.io/portfolio`)
 
 1. Create a repo named `portfolio` (or anything)
 2. In `vite.config.js`, set `base: '/portfolio/'` (match your repo name)
