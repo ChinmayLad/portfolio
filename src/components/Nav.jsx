@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Moon, Sun } from './Icons'
+import { Moon, Sun, LogoCL } from './Icons'
 
 const NAV_SECTIONS = ['About', 'Experience', 'Projects', 'Skills', 'Writing', 'Contact']
 
@@ -16,7 +16,10 @@ export default function Nav({ initials, theme, onToggleTheme }) {
   return (
     <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-inner">
-        <span className="nav-logo">{initials}</span>
+        {/* <span className="nav-logo">{initials}</span> */}
+        <a href="#hero" className="nav-logo" aria-label="Home">
+          <LogoCL size={28} />
+        </a>
 
         <ul className="nav-links">
           {NAV_SECTIONS.map(s => (

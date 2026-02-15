@@ -152,11 +152,9 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
 }
 .nav-logo {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--accent);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 .nav-links {
   display: flex;

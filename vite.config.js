@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // ⚠️  GitHub Pages config:
 //   - If deploying to  username.github.io          → base: '/'
 //   - If deploying to  username.github.io/my-repo  → base: '/my-repo/'
-export default defineConfig({
+export default defineConfig(({command}) => ({
   plugins: [react()],
-  base: '/portfolio/',
-})
+  base: command === 'serve' ? '/' : '/portfolio/',
+}))

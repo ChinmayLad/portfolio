@@ -56,3 +56,23 @@ export const Icon = ({ name, className }) => {
   const C = iconMap[name]
   return C ? <C className={className} /> : null
 }
+
+export const LogoCL = ({ size = 32 }) => (
+  <svg width={size} height={size} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="32" height="32" fill="transparent"/>
+    <line x1="3" y1="3" x2="9"  y2="3"  stroke="#e8a030" strokeWidth="1.5"/>
+    <line x1="3" y1="3" x2="3"  y2="9"  stroke="#e8a030" strokeWidth="1.5"/>
+    <line x1="29" y1="29" x2="23" y2="29" stroke="#e8a030" strokeWidth="1.5"/>
+    <line x1="29" y1="29" x2="29" y2="23" stroke="#e8a030" strokeWidth="1.5"/>
+    <text
+      x="16" y="21"
+      textAnchor="middle"
+      fontFamily="Georgia, serif"
+      fontSize="13"
+      fontWeight="700"
+      fontStyle="italic"
+      fill="#e8a030"
+      letterSpacing="-0.5"
+    >CL</text>
+  </svg>
+)
